@@ -4,15 +4,15 @@
 #
 Name     : os_vif
 Version  : 1.11.1
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/91/f8/adabd65ea65c45c1736c321b9cd7640e57a85d6d796e5c9586f13d6aef17/os_vif-1.11.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/91/f8/adabd65ea65c45c1736c321b9cd7640e57a85d6d796e5c9586f13d6aef17/os_vif-1.11.1.tar.gz
 Summary  : A library for plugging and unplugging virtual interfaces in OpenStack.
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: os_vif-python3
-Requires: os_vif-license
-Requires: os_vif-python
+Requires: os_vif-license = %{version}-%{release}
+Requires: os_vif-python = %{version}-%{release}
+Requires: os_vif-python3 = %{version}-%{release}
 Requires: Sphinx
 Requires: netaddr
 Requires: openstackdocstheme
@@ -46,7 +46,7 @@ license components for the os_vif package.
 %package python
 Summary: python components for the os_vif package.
 Group: Default
-Requires: os_vif-python3
+Requires: os_vif-python3 = %{version}-%{release}
 
 %description python
 python components for the os_vif package.
@@ -69,14 +69,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1533823427
-python3 setup.py build -b py3
+export SOURCE_DATE_EPOCH=1541271359
+python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/os_vif
-cp LICENSE %{buildroot}/usr/share/doc/os_vif/LICENSE
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/os_vif
+cp LICENSE %{buildroot}/usr/share/package-licenses/os_vif/LICENSE
+python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
@@ -85,8 +85,8 @@ echo ----[ mark ]----
 %defattr(-,root,root,-)
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/os_vif/LICENSE
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/os_vif/LICENSE
 
 %files python
 %defattr(-,root,root,-)
