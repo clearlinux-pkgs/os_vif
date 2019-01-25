@@ -1,9 +1,50 @@
 CHANGES
 =======
 
-1.11.1
+1.14.0
 ------
 
+* make kuryr-kubernetes-tempest-daemon-octavia non voting
+* Add test to check os\_vif.internal.command.ip.exists
+* Import IP implementation modules outside privsep context
+* Cleanup device at the end of 'test\_iproute\_object\_closes\_correctly' test
+* do not always plug ovs ports
+* Apply workaround to host\_info serialization test
+* Extend port profiles with datapath offload type
+* Update hacking version
+
+1.13.1
+------
+
+* Create iproute.IPRoute() inside a context
+
+1.13.0
+------
+
+* add isolate\_vif config option
+* Change openstack-dev to openstack-discuss
+* always create ovs port during plug
+* Update min tox version to 2.0
+* Do not import pyroute2 on Windows
+
+1.12.0
+------
+
+* Do not call linux\_net.delete\_net\_dev on Windows
+* Fix random test\_unplug\_ovs failures
+* Reflow docs to 79 columns
+* clean up ip\_command interface
+* Remove IPTools deprecated implementation
+* Add abstract OVSDB API
+* Add support for Windows network commands
+* add nested DPDK VIF classes for kuryr-kubernetes
+* Fix upper-constraints link in tox file
+* Cleanup zuul config file
+* add python 3.6 unit test job
+* switch documentation job to new PTI
+* import zuul job settings from project-config
+* Support for OVS DB TCP socket communication
+* Update reno for stable/rocky
 * Add vif\_plug\_noop to setup.cfg packages
 
 1.11.0
