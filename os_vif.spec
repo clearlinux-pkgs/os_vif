@@ -4,7 +4,7 @@
 #
 Name     : os_vif
 Version  : 1.14.0
-Release  : 4
+Release  : 5
 URL      : https://files.pythonhosted.org/packages/01/2a/1e0b4b07cbe76be71e35c6e412563ca1a698bc002604d7dcbbd94dff37c9/os_vif-1.14.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/01/2a/1e0b4b07cbe76be71e35c6e412563ca1a698bc002604d7dcbbd94dff37c9/os_vif-1.14.0.tar.gz
 Summary  : A library for plugging and unplugging virtual interfaces in OpenStack.
@@ -13,10 +13,8 @@ License  : Apache-2.0
 Requires: os_vif-license = %{version}-%{release}
 Requires: os_vif-python = %{version}-%{release}
 Requires: os_vif-python3 = %{version}-%{release}
-Requires: Sphinx
 Requires: debtcollector
 Requires: netaddr
-Requires: openstackdocstheme
 Requires: oslo.concurrency
 Requires: oslo.config
 Requires: oslo.i18n
@@ -26,7 +24,6 @@ Requires: oslo.versionedobjects
 Requires: ovsdbapp
 Requires: pbr
 Requires: pyroute2
-Requires: reno
 Requires: six
 Requires: stevedore
 BuildRequires : buildreq-distutils3
@@ -74,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1548432562
+export SOURCE_DATE_EPOCH=1551035515
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
