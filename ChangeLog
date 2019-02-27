@@ -1,6 +1,22 @@
 CHANGES
 =======
 
+1.15.0
+------
+
+* Add native implementation OVSDB API
+* make functional tests run on python 3
+* Fix nits in brctl removal (vif\_plug\_linux\_bridge)
+* docs: Add API docs for profile, datapath offload types
+* docs: Add API docs for VIF types
+* remove use of brctl from vif\_plug\_linux\_bridge
+* remove brctl from vif\_plug\_ovs
+* Add function "has\_table\_columns" to OVSDB implementation API
+* Clean up versioned object backlevelling code
+* Change python3.5 job to python3.7 job on Stein+
+* Add create\_port field in VIFPortProfileOpenVSwitch profile
+* Convert hardcoded regexes to raw strings for py36
+
 1.14.0
 ------
 
