@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+1.15.1
+------
+
+* add additional check and gate jobs for os-vif
+* Add "master" parameter to ip.set() API function
+
 1.15.0
 ------
 

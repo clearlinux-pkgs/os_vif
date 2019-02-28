@@ -1,5 +1,5 @@
 PKG_NAME := os_vif
-URL = https://files.pythonhosted.org/packages/74/11/df01e6eaa3b7b371a351c87f06cb7e5bc7417a49748b1b2347c3383270c0/os_vif-1.15.0.tar.gz
+URL = https://files.pythonhosted.org/packages/69/ba/321db41cb3c041d2d7c1da04231b40a144b8577818bb5cbf40f9ffef8f26/os_vif-1.15.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
