@@ -4,7 +4,7 @@
 #
 Name     : os_vif
 Version  : 1.15.1
-Release  : 7
+Release  : 8
 URL      : https://files.pythonhosted.org/packages/69/ba/321db41cb3c041d2d7c1da04231b40a144b8577818bb5cbf40f9ffef8f26/os_vif-1.15.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/69/ba/321db41cb3c041d2d7c1da04231b40a144b8577818bb5cbf40f9ffef8f26/os_vif-1.15.1.tar.gz
 Summary  : A library for plugging and unplugging virtual interfaces in OpenStack.
