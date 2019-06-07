@@ -1,6 +1,20 @@
 CHANGES
 =======
 
+1.16.0
+------
+
+* Remove unused vif\_plug\_ovs.i18n module
+* Fix Kuryr-Kubernetes job name
+* Replace git.openstack.org URLs with opendev.org URLs
+* Prevent "qbr" Linux Bridge from replying to ARP messages
+* Remove IP proxy methods
+* OpenDev Migration Patch
+* Refactor functional base test classes
+* Drop testtools from test-requirements.txt
+* Replace openstack.org git:// URLs with https://
+* Update master for stable/stein
+
 1.15.1
 ------
 
@@ -11,6 +25,8 @@ CHANGES
 ------
 
 * Add native implementation OVSDB API
+* docs: Use sphinx.ext.autodoc for profile, datapath offload types
+* docs: Use sphinx.ext.autodoc for VIF types
 * make functional tests run on python 3
 * Fix nits in brctl removal (vif\_plug\_linux\_bridge)
 * docs: Add API docs for profile, datapath offload types
