@@ -1,6 +1,19 @@
 CHANGES
 =======
 
+1.17.0
+------
+
+* Fix code bug in document
+* only disable mac ageing for ovs hybrid plug
+* Bump the openstackdocstheme extension to 1.20
+* Blacklist sphinx 2.1.0 (autodoc bug)
+* Sync Sphinx requirement
+* Add Python 3 Train unit tests
+* set ignore\_basepython\_conflict = True in tox.ini
+* OVS DPDK port representors support
+* Fix mock of built in "open" function in unit tests
+
 1.16.0
 ------
 
