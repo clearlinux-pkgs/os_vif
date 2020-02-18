@@ -1,6 +1,18 @@
 CHANGES
 =======
 
+2.0.0
+-----
+
+* [OVS] VLAN tag should be set in the Port register
+* Revert "[Follow Up] OVS DPDK port representors support"
+* move os-vif-ovs to be a non legacy job
+* [Follow Up] OVS DPDK port representors support
+* Drop python2 support and testing
+* Switch to Ussuri jobs
+* Update the constraints url
+* Update master for stable/train
+
 1.17.0
 ------
 
