@@ -4,7 +4,7 @@
 #
 Name     : os_vif
 Version  : 2.0.0
-Release  : 15
+Release  : 16
 URL      : https://files.pythonhosted.org/packages/03/8b/e983b3930415388459db486fef7c0d851f38fe84d7ce6a86817c1067d21a/os_vif-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/03/8b/e983b3930415388459db486fef7c0d851f38fe84d7ce6a86817c1067d21a/os_vif-2.0.0.tar.gz
 Summary  : A library for plugging and unplugging virtual interfaces in OpenStack.
@@ -42,34 +42,8 @@ BuildRequires : six
 BuildRequires : stevedore
 
 %description
-========================
 Team and repository tags
-========================
-
-.. image:: https://governance.openstack.org/tc/badges/os-vif.svg
-    :target: https://governance.openstack.org/tc/reference/tags/index.html
-
-.. Change things from this point on
-
-======
-os-vif
-======
-
-.. image:: https://img.shields.io/pypi/v/os-vif.svg
-    :target: https://pypi.org/project/os-vif/
-    :alt: Latest Version
-
-.. image:: https://img.shields.io/pypi/dm/os-vif.svg
-    :target: https://pypi.org/project/os-vif/
-    :alt: Downloads
-
-A library for plugging and unplugging virtual interfaces in OpenStack.
-
-* License: Apache License, Version 2.0
-* Documentation: https://docs.openstack.org/os-vif/latest/
-* Source: https://opendev.org/openstack/os-vif
-* Bugs: https://bugs.launchpad.net/os-vif
-* Release Notes: https://docs.openstack.org/releasenotes/os-vif
+        ========================
 
 %package license
 Summary: license components for the os_vif package.
@@ -92,7 +66,20 @@ python components for the os_vif package.
 Summary: python3 components for the os_vif package.
 Group: Default
 Requires: python3-core
-Provides: pypi(os-vif)
+Provides: pypi(os_vif)
+Requires: pypi(debtcollector)
+Requires: pypi(netaddr)
+Requires: pypi(oslo.concurrency)
+Requires: pypi(oslo.config)
+Requires: pypi(oslo.i18n)
+Requires: pypi(oslo.log)
+Requires: pypi(oslo.privsep)
+Requires: pypi(oslo.versionedobjects)
+Requires: pypi(ovsdbapp)
+Requires: pypi(pbr)
+Requires: pypi(pyroute2)
+Requires: pypi(six)
+Requires: pypi(stevedore)
 
 %description python3
 python3 components for the os_vif package.
@@ -107,8 +94,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583195845
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583538682
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
