@@ -1,6 +1,22 @@
 CHANGES
 =======
 
+2.1.0
+-----
+
+* Use unittest.mock instead of third party mock
+* Switch to newer openstackdocstheme and reno versions
+* Remove .testr.conf
+* Remove egg\_info in setup.cfg
+* Remove translation sections from setup.cfg
+* Remove six
+* [Community goal] Update contributor documentation
+* Add Python3 victoria unit tests
+* Update master for stable/ussuri
+* Fix doc build job for wanring turn into error
+* trivial: Remove some rules from flake8 ignore list
+* Update hacking for Python3
+
 2.0.0
 -----
 
