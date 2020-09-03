@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+2.2.0
+-----
+
+* deprecate ovs-vsctl driver and make native the default
+* windows: Add missing return
+* update tox envs and support pdf docs
+* [goal] migrate testing to ubuntu focal
+* support pyroute2 0.5.13
+
 2.1.0
 -----
 
