@@ -4,7 +4,7 @@
 #
 Name     : os_vif
 Version  : 2.2.0
-Release  : 19
+Release  : 20
 URL      : https://files.pythonhosted.org/packages/9b/ba/57dfa5873eb419ffd94744658529e9043b472fff5aa579968ea3253a6a77/os_vif-2.2.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9b/ba/57dfa5873eb419ffd94744658529e9043b472fff5aa579968ea3253a6a77/os_vif-2.2.0.tar.gz
 Summary  : A library for plugging and unplugging virtual interfaces in OpenStack.
